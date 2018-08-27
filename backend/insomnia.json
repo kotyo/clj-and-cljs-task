@@ -1,0 +1,72 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2018-08-27T01:05:22.134Z",
+	"__export_source": "insomnia.desktop.app:v6.0.2",
+	"resources": [
+		{
+			"_id": "wrk_557c7090ce104859a353a7a4f47c6141",
+			"created": 1535220964001,
+			"description": "",
+			"modified": 1535220964001,
+			"name": "clj-and-cljs-test",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_5108ba95235c47b2963fc70eb0b27ae5",
+			"color": null,
+			"created": 1535220964077,
+			"data": {},
+			"isPrivate": false,
+			"metaSortKey": 1535220964077,
+			"modified": 1535220964077,
+			"name": "New Environment",
+			"parentId": "wrk_557c7090ce104859a353a7a4f47c6141",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_40aa8d3e40d54423808e744dc70b70c3",
+			"cookies": [],
+			"created": 1535220964085,
+			"modified": 1535220964085,
+			"name": "Default Jar",
+			"parentId": "wrk_557c7090ce104859a353a7a4f47c6141",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "req_a56f8387f42042199a680512aee3b086",
+			"authentication": {},
+			"body": {},
+			"created": 1535220983855,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1535220983855,
+			"method": "GET",
+			"modified": 1535331869681,
+			"name": "scramble",
+			"parameters": [
+				{
+					"id": "pair_e1b7c3ccf9a14790a160cbe826e8ad5f",
+					"name": "str1",
+					"value": "lkkms"
+				},
+				{
+					"id": "pair_4d03ff1341e34c079e2cbf40c1b8e284",
+					"name": "str2",
+					"value": "ksmk"
+				}
+			],
+			"parentId": "wrk_557c7090ce104859a353a7a4f47c6141",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8080/scramble",
+			"_type": "request"
+		}
+	]
+}
