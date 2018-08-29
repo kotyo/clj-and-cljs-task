@@ -16,7 +16,7 @@
   (testing "With wrong parameter type"
     (is (thrown? AssertionError (scramble? 10 0))))
   (testing "With numbers in parameter values"
-    (is (thrown? ArrayIndexOutOfBoundsException (scramble? "abcd1234" "4a"))))
+    (is (thrown? IndexOutOfBoundsException (scramble? "abcd1234" "4a"))))
   (testing "With capital letters in parameter values"
-    (is (thrown? ArrayIndexOutOfBoundsException (scramble? "aBCd" "CB")))))
+    (is (thrown? IndexOutOfBoundsException (scramble? "aBCd" "CB")))))
   

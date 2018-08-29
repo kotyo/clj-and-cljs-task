@@ -16,7 +16,10 @@
    scrambling the characters in it"
   [str1 str2]
   {:pre [(string? str1) (string? str2)]}
-  (let [chrs (make-array Integer/TYPE chrs-size)]
-    (str-processor str1 #(aset chrs %1 (inc (aget chrs %1))))
-    (str-processor str2 #(>= (aset chrs %1 (dec (aget chrs %1)))
-                             0))))
+  (let [chrs (transient (apply vector (repeat chrs-size 0)))]
+    (str-processor str1 (fn [idx]
+                          (assoc! chrs idx (inc (nth chrs idx)))))
+    (str-processor str2 (fn [idx]
+                          (let [el (dec (nth chrs idx))]
+                            (assoc! chrs idx el)
+                            (>= el 0))))))
